@@ -30,9 +30,10 @@
             'url'           => get_site_url(),
             'name'     		=> get_bloginfo('name'),
 			'description'	=> get_bloginfo('description'),
-			'menus'         => array_map(function($menu){
+			/*'menus'         => array_map(function($menu){
                 return apply_filters('rez_serialize_object', $menu);
-            }, $menus),
+            }, $menus),*/
+		'menus' => [],
             'isMobile'      => wp_is_mobile()
         );
 
