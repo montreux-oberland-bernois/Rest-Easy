@@ -74,7 +74,8 @@
         $output = array_map(function($target_post){
 
 			// gather related serialized items for this post
-			$related = apply_filters('rez_gather_related', array(), $target_post);
+			//$related = apply_filters('rez_gather_related', array(), $target_post); // EXTREMELY time consuming
+			$related = [];
 
 			// run post through main serializer
 			$serialized = apply_filters('rez_serialize_object', $target_post);
