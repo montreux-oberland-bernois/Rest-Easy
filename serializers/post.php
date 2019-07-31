@@ -21,11 +21,11 @@
 
             setup_postdata($target_post);
             $excerpt = get_the_excerpt($target_post->ID);
-            if ( !$excerpt ) {
+            /*if ( !$excerpt ) {
                 $content = get_post_field('post_content', $target_post->ID);
                 $trimmed = apply_filters('wp_trim_excerpt', $content);
                 $excerpt = apply_filters('the_excerpt', $trimmed);
-            }
+            }*/
 
             $output = array(
                 'id'            => $target_post->ID,
